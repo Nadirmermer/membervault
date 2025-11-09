@@ -1,0 +1,65 @@
+name: Bug Report
+description: Bir hata bildirin
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Hata Bildirimi
+        Lütfen aşağıdaki bilgileri eksiksiz doldurun.
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Hata Açıklaması
+      description: Hatayı detaylı açıklayın
+      placeholder: Ne oldu? Ne olması gerekiyordu?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: steps
+    attributes:
+      label: Tekrar Etme Adımları
+      description: Hatayı nasıl tekrar edebiliriz?
+      placeholder: |
+        1. Cookie yapıştırdım
+        2. Playlist ekledim
+        3. İndirmeye başladım
+        4. ...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log Dosyası
+      description: downloader_log.txt dosyasından ilgili bölümü yapıştırın
+      placeholder: |
+        [14:35:22] [ERROR] ...
+      render: shell
+      
+  - type: input
+    id: version
+    attributes:
+      label: MemberVault Versiyonu
+      placeholder: v4.0
+    validations:
+      required: true
+      
+  - type: input
+    id: os
+    attributes:
+      label: İşletim Sistemi
+      placeholder: Windows 11, macOS 14, Ubuntu 22.04
+    validations:
+      required: true
+      
+  - type: input
+    id: python
+    attributes:
+      label: Python Versiyonu
+      placeholder: Python 3.11.5
+    validations:
+      required: true

@@ -1,0 +1,40 @@
+name: Feature Request
+description: Yeni özellik öner
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💡 Özellik Önerisi
+        Yeni bir özellik önermek için formu doldurun.
+        
+  - type: textarea
+    id: problem
+    attributes:
+      label: Sorun
+      description: Bu özellik hangi sorunu çözecek?
+      placeholder: Şu anda ... yapmak zor çünkü ...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerilen Çözüm
+      description: Nasıl bir çözüm hayal ediyorsunuz?
+      placeholder: Şöyle bir özellik olsa ...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatifler
+      description: Başka hangi çözümleri düşündünüz?
+      
+  - type: textarea
+    id: additional
+    attributes:
+      label: Ek Bilgiler
+      description: Mockup, screenshot vb.

@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Sanal Ortam
+.venv/
+venv/
+ENV/
+env/
+
+# Uygulama Dosyaları
+cookies.txt
+cookies_new.json
+*.json
+!package.json
+
+# Checkpoint
+download_progress.json
+
+# Log Dosyaları
+*.log
+
+# İndirilen Videolar
+Videolar/
+*.mp4
+*.mkv
+*.webm
+*.jpg
+*.png
+
+# Backup
+*.bak
+*.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Geçici
+*.tmp
+temp/
+tmp/
+

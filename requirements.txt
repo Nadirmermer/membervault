@@ -1,0 +1,22 @@
+# YouTube Member Playlist Downloader - Requirements
+
+# GUI Framework
+customtkinter>=5.2.0
+
+# Video Downloader
+yt-dlp>=2023.11.16
+
+# Standard library (included with Python, but listed for reference)
+# - json
+# - subprocess
+# - threading
+# - queue
+# - time
+# - re
+# - pathlib
+# - datetime
+# - typing
+# - tkinter (included with Python on most systems)
+
+# Optional: For better performance
+# Pillow>=10.0.0  # For thumbnail display (optional, uncomment if needed)
