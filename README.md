@@ -150,12 +150,12 @@ membervault/
 Sorun mu yaşıyorsunuz?
 
 1. **Log Dosyasını Kontrol Edin**: `downloader_log.txt` dosyasında detaylı hata mesajları bulunur
-2. **GitHub Issues**: [Issues sayfasından](https://github.com/USERNAME/membervault/issues) yeni bir issue açın
+2. **GitHub Issues**: [Issues sayfasından](https://github.com/Nadirmermer/membervault/issues) yeni bir issue açın
 3. **Hata Raporu**: Log dosyasındaki ilgili kısmı issue'ya yapıştırın
 
 ### 💬 Topluluk Desteği
-- **Discussions**: Sorularınız için [GitHub Discussions](https://github.com/USERNAME/membervault/discussions) kullanın
-- **Wiki**: [Sık sorulan soruları](https://github.com/USERNAME/membervault/wiki) kontrol edin
+- **Discussions**: Sorularınız için [GitHub Discussions](https://github.com/Nadirmermer/membervault/discussions) kullanın
+- **Wiki**: [Sık sorulan soruları](https://github.com/Nadirmermer/membervault/wiki) kontrol edin
 
 ## 🤝 Katkıda Bulunma
 
@@ -184,7 +184,7 @@ Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
 
 Made with ❤️ for YouTube membership content preservation
 
-[Report Bug](https://github.com/USERNAME/membervault/issues) · [Request Feature](https://github.com/USERNAME/membervault/issues) · [Discussions](https://github.com/USERNAME/membervault/discussions)
+[Report Bug](https://github.com/Nadirmermer/membervault/issues) · [Request Feature](https://github.com/Nadirmermer/membervault/issues) · [Discussions](https://github.com/Nadirmermer/membervault/discussions)
 
 </div>
 

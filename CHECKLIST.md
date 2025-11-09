@@ -229,8 +229,8 @@ git commit -m "🎉 v4.0 MemberVault Edition - YouTube üyelik içerik arşivley
 # Ana branch adını main olarak ayarlayın
 git branch -M main
 
-# GitHub remote ekleyin (USERNAME yerine kendi kullanıcı adınızı yazın)
-git remote add origin https://github.com/USERNAME/membervault.git
+# GitHub remote ekleyin
+git remote add origin https://github.com/Nadirmermer/membervault.git
 
 # GitHub'a push edin
 git push -u origin main
@@ -340,7 +340,7 @@ Tüm checklistleri tamamladıysanız, **EVET!** 🎉
 2. ✅ GitHub repository oluşturdunuz mu?
 3. ✅ Git push yaptınız mı?
 4. ✅ Release oluşturdunuz mu?
-5. ✅ README.md'de USERNAME değişikliklerini yaptınız mı?
+5. ✅ README.md güncellendi (Nadirmermer)
 
 ### Yayınlandıktan Sonra:
 - 📢 Reddit/Discord toplulukları ile paylaşın
@@ -354,6 +354,6 @@ Tüm checklistleri tamamladıysanız, **EVET!** 🎉
 
 **🔐 MemberVault v4.0 - Yayına Hazır!**
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by [Nadir Mermer](https://github.com/Nadirmermer)
 
 </div>

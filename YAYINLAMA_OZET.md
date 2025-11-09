@@ -223,8 +223,7 @@ python yt_downloader_clean.py
 ## 💡 İpuçları
 
 ### README.md'de Değişiklik Yapılacak Yerler
-1. Satır ~155, ~163: `USERNAME` → Kendi GitHub kullanıcı adın
-2. Satır ~200: Made with ❤️ by [Your Name]
+✅ Tamamlandı! Tüm USERNAME placeholder'ları Nadirmermer ile değiştirildi.
 
 ### Opsiyonel İyileştirmeler
 1. **Screenshot**: Program çalışırken ekran görüntüsü al, README'ye ekle
@@ -240,7 +239,7 @@ Tüm dosyalar oluşturuldu, güncellemeler yapıldı, GitHub hazırlıkları tam
 
 **Şimdi yapılacaklar:**
 1. ✅ Programı test et
-2. ✅ GitHub'a yükle
+2. ✅ GitHub'a yükle (https://github.com/Nadirmermer/membervault)
 3. ✅ Release oluştur
 4. 🎉 Dünyaya duyur!
 

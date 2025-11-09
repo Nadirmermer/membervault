@@ -47,7 +47,7 @@ python yt_downloader_clean.py
 
 <div align="center">
 
-**Sorular mı var?** → [GitHub Issues](https://github.com/USERNAME/membervault/issues)
+**Sorular mı var?** → [GitHub Issues](https://github.com/Nadirmermer/membervault/issues)
 
 **Beğendiniz mi?** → ⭐ Yıldız verin!
 
