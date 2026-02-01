@@ -1,33 +1,22 @@
-# 🔐 MemberVault - YouTube Üyelik İçerik İndiricisi
+# YouTube Video İndirici
 
-Katıldığınız YouTube kanal üyeliklerinizden (membership) erişebildiğiniz özel içerikleri (premium videolar, canlı yayınlar, topluluk gönderileri) toplu olarak indirmenizi sağlayan profesyonel masaüstü uygulaması.
-
-> **💡 MemberVault Nedir?** Ödeme yaparak katıldığınız YouTube kanal üyeliklerinizdeki özel içerikleri, kendi kişisel arşivinize güvenle kaydetmenizi sağlar. İçerik üreticilerinin yayından kaldırdığı veya değiştirdiği üyelik içeriklerinizi kaybetmeyin!
+YouTube videolarını ve playlist'lerini indirmek için geliştirilmiş Python tabanlı masaüstü uygulaması.
 
 ## ✨ Özellikler
 
 ### 🎯 Temel Özellikler
-- ✅ **3 Adımlı Basit Süreç**: Cookie → Playlist → İndirme
-- ✅ **Üyelik İçeriklerine Erişim**: Katıldığınız kanal üyeliklerindeki özel içerikler
-- ✅ **Toplu Arşivleme**: Birden fazla üyelik playlist'ini aynı anda yönetin
-- ✅ **Akıllı Dosya Kontrolü**: Mevcut videolar otomatik atlanır
-- ✅ **Kaldığımız Yerden Devam**: Program kapansa bile checkpoint sistemi ile devam edebilir
+- ✅ Cookie tabanlı kimlik doğrulama
+- ✅ Toplu video indirme
+- ✅ Akıllı dosya kontrolü (mevcut videolar atlanır)
+- ✅ Checkpoint sistemi (kaldığınız yerden devam)
 
 ### 📊 İndirme Özellikleri
-- 🎥 **Kalite Seçimi**: En İyi / 1080p / 720p / 480p
-- 📈 **Canlı Progress Bar**: Her video için ayrı ilerleme çubuğu
-- ⚡ **Hız & Süre**: Gerçek zamanlı hız ve kalan süre tahmini
-- 🖼️ **Otomatik Thumbnail**: Kapak fotoğrafları videoya gömülü
-- 📝 **Alt Yazı Desteği**: Türkçe, İngilizce ve diğer diller videoya gömülü
-- ⏸️ **Duraklat/Devam**: İndirmeyi istediğiniz zaman duraklatın
-- 🔄 **Hata Yönetimi**: Başarısız videoları tekrar deneme
-
-### 🎨 Kullanıcı Arayüzü
-- 🌙 **Modern Dark Theme**: Göz yormayan karanlık tema
-- 📱 **Responsive Tasarım**: Her ekran boyutuna uyumlu
-- 📋 **Detaylı Video Listesi**: Durum ikonları ve progress barlar
-- 📊 **İstatistikler**: Toplam, İndirilen, Başarısız, Atlanan sayıları
-- 📝 **Kompakt Log**: Tüm işlemler kaydedilir
+- 🎥 Kalite seçimi: En İyi / 1080p / 720p / 480p
+- 📈 Canlı progress bar
+- 🖼️ Otomatik thumbnail
+- 📝 Alt yazı desteği
+- ⏸️ Duraklat/Devam
+- 🔄 Hata yönetimi
 
 ## 🚀 Kurulum
 
@@ -41,100 +30,92 @@ pip install -r requirements.txt
 ```
 
 ### Adım 2: Programı Başlatın
+
+**Tam özellikli GUI için:**
 ```bash
-python yt_downloader_clean.py
+python youtube_downloader_gui.py
 ```
 
-## 📖 Kullanım Kılavuzu
+**Hızlı indirici için:**
+```bash
+python youtube_quick_downloader.py
+```
 
-### 1️⃣ Adım 1: Üyelik Cookie'sini Hazırlama
+## 📖 Kullanım
 
-#### Cookie Nasıl Alınır?
-1. **Chrome Extension Yükleyin**: [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/)
-2. **Üyeliğiniz Olan Hesapla Giriş Yapın**: YouTube'da üye olduğunuz kanala ait hesabınızla giriş yapın
-3. **Extension'ı Açın**: Sağ üstteki çerez simgesine tıklayın
-4. **Export** butonuna basın (JSON formatında kopyalar)
-5. **Programa Yapıştırın**: Cookie alanına yapıştırıp "Kaydet ve Test Et"
+### 1️⃣ Cookie Ekleme
+1. Tarayıcı eklentisi (EditThisCookie) ile cookie'leri dışa aktarın
+2. Cookie alanına yapıştırın
+3. "Kaydet ve Test Et" butonuna basın
 
-#### Neden Cookie Gerekli?
-YouTube kanal üyelik içerikleri sadece ödeme yapıp katılan kullanıcılara açıktır. Cookie'ler üyelik kimliğinizi doğrular.
+### 2️⃣ Link Ekleme
+1. YouTube playlist veya video linklerini yapıştırın
+2. "Linkleri Ekle" butonuna basın
+3. Kalite seçimi yapın
 
-### 2️⃣ Adım 2: Üyelik Playlist Linklerini Ekleme
+### 3️⃣ İndirme
+1. İndirme klasörünü seçin
+2. "İndirmeyi Başlat" butonuna basın
+3. İlerlemeyi takip edin
+## 🔒 Güvenlik Notları
 
-1. **Üyelik İçerik Linklerini Yapıştırın**: Her satıra bir YouTube linki
-   ```
-   https://www.youtube.com/playlist?list=PLxxxxxx (Üyelik playlist'i)
-   https://www.youtube.com/watch?v=yyyyyyyy (Tekil üyelik videosu)
-   ```
+- Cookie dosyalarını kimseyle paylaşmayın
+- İndirilen içerikleri kişisel kullanım için saklayın
+- Tüm veriler yerel bilgisayarınızda kalır
 
-2. **"✅ LİNKLERİ EKLE VE BİLGİLERİ ÇEK"** butonuna basın
+## 🐛 Sorun Giderme
 
-3. **Kalite Seçin**: En İyi (önerilen) / 1080p / 720p / 480p
+### Yaygın Hatalar
+- **Cookie Geçersiz**: Cookie'yi yeniden alın
+- **Erişim Engellendi**: Üyelik durumunuzu kontrol edin
+- **Yavaş İndirme**: İnternet bağlantınızı test edin
+- **Zaman Aşımı**: Video boyutu veya bağlantı hızı kontrol edilmeli
 
-4. **Sağ Panelde Kontrol Edin**: Eklenen playlist'ler ve video sayıları
+## 📜 Kullanım Koşulları
 
-### 3️⃣ Adım 3: İndirme
+⚠️ Bu yazılım kişisel kullanım içindir. İndirilen içerikleri:
+- ❌ Başkalarıyla paylaşmayın
+- ❌ Ticari amaçla kullanmayın
+- ✅ Sadece kişisel arşivinizde tutun
 
-1. **📁 Klasör Seçin**: İndirme klasörünü belirleyin (zorunlu)
+## 🙏 Kullanılan Teknolojiler
 
-2. **▶️ İndirmeyi Başlatın**:
-   - Program önce klasörü tarar (mevcut videolar atlanır)
-   - Videolar sırayla indirilir
-   - Her video için progress bar gösterilir
+- **yt-dlp**: Video indirme motoru
+- **customtkinter**: Modern UI kütüphanesi
+- **FFmpeg**: Video/ses işleme
 
-3. **⏸️ Duraklat/Devam**: İstediğiniz zaman duraklatabilirsiniz
+---
 
-4. **⏹️ Durdur**: Tamamen durdurmak için
-
-5. **🔄 Başarısızları Tekrarla**: Hata alan videoları yeniden dene
-
-## 🎯 İpuçları
-
-### Hız İpuçları
-- ✅ **Tek seferde çok playlist eklemeyin** (5-10 playlist ideal)
-- ✅ **İnternet bağlantınızı kontrol edin** (en az 10 Mbps önerilen)
-- ✅ **Diğer indirme programlarını kapatın**
-
-### Sorun Giderme
-
-#### "Cookie Geçersiz" Hatası
-- Cookie'nin süresi dolmuş olabilir → Yeniden alın
-- YouTube'dan çıkış yapmış olabilirsiniz → Tekrar giriş yapın
-- "Test Atla" butonu ile devam edip deneyebilirsiniz
-
-#### "Erişim Engellendi" Hatası
-- Video üyelere özel olabilir → Üyeliğinizi kontrol edin
-- Cookie doğru hesaptan mı? → Kontrol edin
-- YouTube rate limit → 15-20 dakika bekleyin
-
-#### İndirme Çok Yavaş
-- İnternet bağlantınızı test edin
-- Başka programlar internet kullanıyor mu?
-- YouTube sunucuları yavaş olabilir (akşam saatlerinde)
-
-#### "Zaman Aşımı" Hatası
-- Video çok büyük olabilir (1 saatten uzun)
-- İnternet bağlantısı kesilmiş olabilir
-- Videoyu manuel olarak deneyin
+**Son Güncelleme**: Şubat 2026
 
 ## 📁 Dosya Yapısı
 
 ```
-membervault/
-├── yt_downloader_clean.py      # Ana program
-├── cookies.txt                  # Üyelik cookie dosyası (otomatik oluşturulur)
-├── download_checkpoint.json     # İlerleme kaydı (kaldığımız yerden devam)
-├── downloader_log.txt          # Detaylı log dosyası
-├── requirements.txt             # Python paketleri
-├── README.md                    # Bu dosya
-├── LICENSE                      # MIT Lisansı
-├── CONTRIBUTING.md              # Katkı rehberi
-├── CODE_OF_CONDUCT.md          # Davranış kuralları
-├── CHANGELOG.md                 # Versiyon geçmişi
-├── CHECKLIST.md                 # Yayınlama kontrol listesi
-├── Videolar/                    # İndirilen videolar (varsayılan)
-└── .venv/                       # Python sanal ortamı (önerilen)
+youtube video/
+├── youtube_downloader_gui.py       # 🎨 Tam özellikli GUI (önerilen)
+├── youtube_quick_downloader.py     # ⚡ Hızlı basit indirici
+├── requirements.txt                # Python bağımlılıkları
+├── video_links.txt                 # Video linkleri
+├── ffmpeg/                         # FFmpeg binary dosyaları
+├── indirilen_videolar/            # İndirilen videolar (66 video)
+└── README.md                       # Bu dosya
 ```
+
+## 🎯 Hangi Programı Kullanmalıyım?
+
+### 🎨 **youtube_downloader_gui.py** (Önerilen)
+- ✅ Tam özellikli, modern GUI
+- ✅ Playlist yönetimi ve video önizleme
+- ✅ Her video için progress bar
+- ✅ Duraklat/devam, hata yönetimi
+- ✅ İstatistikler ve detaylı log
+- 📌 **Çok sayıda video için ideal**
+
+### ⚡ **youtube_quick_downloader.py** (Hızlı)
+- ✅ Minimalist, tek ekran
+- ✅ Hızlı indirme, sade arayüz
+- ✅ Az sayıda video için pratik
+- 📌 **Acil iş için ideal**
 
 ## 🔒 Güvenlik & Gizlilik
 

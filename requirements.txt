@@ -18,5 +18,8 @@ yt-dlp>=2023.11.16
 # - typing
 # - tkinter (included with Python on most systems)
 
-# Optional: For better performance
-# Pillow>=10.0.0  # For thumbnail display (optional, uncomment if needed)
+# Image Processing
+Pillow>=10.0.0  # For thumbnail display
+
+# Cookie Extraction (Windows için)
+pywin32>=306; sys_platform == "win32"
